@@ -1,0 +1,93 @@
+<html>
+    
+    <head>
+        <title>EduRank</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+
+        <style>
+            .dark{
+                color: black;
+            }
+        </style>
+  </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                        <div class="nav-wrapper blue">
+                          <a href="#!" class="brand-logo center white-text">EduRank - Student</a>
+                        </div>
+                </nav>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <br><br>
+            <button class="center-align btn-large green">THEORY</button>
+            <div class="question">
+                    <div>
+                        <form method="POST" action="/ratings/theory">
+                            <br><br>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="input-field col s3">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" name="regno" type="text" class="validate">
+                                    <label for="icon_prefix">Reg. No.</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                    <i class="material-icons prefix">library_books</i>
+                                    <input id="i" type="text" name="classid" class="validate">
+                                    <label for="i">Class ID</label>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <% quet.forEach(function(q){%>
+                                <h3><%= q.question %></h3>
+                                <div class="left-align">
+                                        <p>
+                                                <label>
+                                                    <input class="with-gap" value="a" name= <%= q._id %> type="radio"/>
+                                                    <span class="dark"><%= q.a %></span>
+                                                </label>
+                                        </p>
+                                        <p>
+                                                    <label>
+                                                        <input class="with-gap" value="b" name= <%= q._id %> type="radio"/>
+                                                        <span class="dark"><%= q.b %></span>
+                                                    </label>
+                                        </p>
+                                        <p>
+                                                    <label>
+                                                        <input class="with-gap" value="c" name= <%= q._id %> type="radio"/>
+                                                        <span class="dark"><%= q.c %></span>
+                                                    </label>
+                                        </p>
+                                        <p>
+                                                    <label>
+                                                        <input class="with-gap" value="d" name= <%= q._id %> type="radio"/>
+                                                        <span class="dark"><%= q.d %></span>
+                                                    </label>
+                                        </p>
+                                </div>
+                            <%})  %>
+                            <button class="btn-large center-align red waves-effect waves-light"><i class="material-icons right">send</i>Submit Feedback</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

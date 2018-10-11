@@ -1,0 +1,174 @@
+<html>
+    
+    <head>
+        <title>EduRank</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+
+  </head>
+
+    <body>
+        <div class="container">
+                <nav>
+                        <div class="nav-wrapper blue">
+                          <a href="#!" class="brand-logo center white-text">EduRank</a>
+                          <ul class="left hide-on-med-and-down">
+                            <li><a href="/">Home</a></li>
+                            <li class="active"><a href="/setup">Setup</a></li>
+                            <li><a href="/student">Student</a></li>
+                          </ul>
+                        </div>
+                </nav>
+        </div>
+        <br><br><br>
+        <div class="container center-align">
+            
+            <div class="row">
+
+                <div class="col s12"><h4 class="orange-text text-darken-3" style="padding : 10px">Setup for each component</h4></div>
+
+                <div class="col s4">
+                    <a class="waves-effect waves-light light-blue accent-4 btn-large">Theory</a><br><br>
+                    <div class="row">
+                            <form class="col s12" name="thoeryform" method="POST" action="/questions/theory">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">question_answer</i>
+                                        <input id="icon_prefix" type="text" name="question" class="validate">
+                                        <label for="icon_prefix">Question</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="a" class="validate">
+                                        <label for="icon_prefix">Option A</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="b" class="validate">
+                                        <label for="icon_prefix">Option B</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="c" class="validate">
+                                        <label for="icon_prefix">Option C</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="d" class="validate">
+                                        <label for="icon_prefix">Option D</label>
+                                    </div>
+                                </div>
+                                <button id="th" class="btn-large red">Add</button>
+                            </form>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <a class="waves-effect waves-light light-blue accent-4 btn-large">Lab</a><br><br>
+                    <div class="row">
+                            <form class="col s12" method="POST" name="labform" action="/questions/lab">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">question_answer</i>
+                                        <input id="icon_prefix" type="text" name="question" class="validate">
+                                        <label for="icon_prefix">Question</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="a" class="validate">
+                                        <label for="icon_prefix">Option A</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="b" class="validate">
+                                        <label for="icon_prefix">Option B</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="c" class="validate">
+                                        <label for="icon_prefix">Option C</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="d" class="validate">
+                                        <label for="icon_prefix">Option D</label>
+                                    </div>
+                                </div>
+                                <button class="btn-large red">Add</button>
+                            </form>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <a class="waves-effect waves-light light-blue accent-4 btn-large">Project</a><br><br>
+                    <div class="row">
+                            <form class="col s12" method="POST" name="projectform" action="/questions/project">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">question_answer</i>
+                                        <input id="icon_prefix" type="text" name="question" class="validate">
+                                        <label for="icon_prefix">Question</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="a" class="validate">
+                                        <label for="icon_prefix">Option A</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="b" class="validate">
+                                        <label for="icon_prefix">Option B</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="c" class="validate">
+                                        <label for="icon_prefix">Option C</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">format_list_bulleted</i>
+                                        <input id="icon_prefix" type="text" name="d" class="validate">
+                                        <label for="icon_prefix">Option D</label>
+                                    </div>
+                                </div>
+                                <button class="btn-large red">Add</button>
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
