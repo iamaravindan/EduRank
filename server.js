@@ -27,6 +27,10 @@ app.get('/setup',function(req,res){
     res.sendFile(path.join(__dirname,'/views/setup.html'));
 });
 
+app.get('/analyse',function(req,res){
+    res.render('analyse');
+});
+
 app.get('/student',function(req,res){
     res.sendFile(path.join(__dirname,'/views/student.html'));
 });
